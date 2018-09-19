@@ -18,7 +18,6 @@ import firebase from 'firebase'
 
 class XYAccount {
   constructor (_onStateChange) {
-    window.fbase = firebase
     console.log(`XYAccount constructor`)
     const config = {
       apiKey: `AIzaSyCCtXYmkLd3gh6fKjSCGOWhsYoeKccYq-g`,
