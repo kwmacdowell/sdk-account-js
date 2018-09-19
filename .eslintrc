@@ -1,0 +1,27 @@
+# @Author: XY | The Findables Company <arietrouw>
+# @Date:   Tuesday, January 23, 2018 9:36 AM
+# @Email:  developer@xyfindables.com
+# @Filename: .eslintrc
+# @Last modified by:   arietrouw
+# @Last modified time: Saturday, April 7, 2018 1:58 PM
+# @License: All Rights Reserved
+# @Copyright: Copyright XY | The Findables Company
+
+{
+  "extends": ["airbnb", "standard", "standard-react"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "func-names": 0,
+    "quotes": [2, 'backtick'],
+    "no-plusplus": 0,
+    "max-len": 0,
+    "no-underscore-dangle": 0,
+    "import/extensions": 0
+  }
+}
