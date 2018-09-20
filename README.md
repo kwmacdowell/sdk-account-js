@@ -34,7 +34,7 @@ import XYAccount from './sdk-account-js'
 If you are using the library on an existing website and just want to include it, use the public link
 
 ```html
-<script src="https://account.xyo.network/js/xyaccount.js"></script>
+<script src="https://account.xyo.network/js/account.js"></script>
 ```
 
 ## License
