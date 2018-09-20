@@ -29,12 +29,34 @@ const XYAccount = require('./sdk-account-js')
 import XYAccount from './sdk-account-js'
 ```
 
-### Website ([Browserify](http://browserify.org/))
+### Website (Direct Link)
 
 If you are using the library on an existing website and just want to include it, use the public link
 
 ```html
 <script src="https://account.xyo.network/js/account.js"></script>
+<script>
+  window.xyAccountLoaded(XYAccount) {
+
+  }
+</script>
+```
+
+## Dev Process
+
+We use the "Github Flow" methodology.
+Please review [Github Flow](https://guides.github.com/introduction/flow/)
+
+When you wish to make changes or add new fetures, please do the following things:
+
+1. Create a new Branch from the Master branch and follow these naming conventions [Naming Conventions](https://github.com/chrisjlee/git-style-guide#short-well-defined-tokens)
+
+Use "grouping" tokens in front of branch names. The groups can be named appropriately to match one's workflow.
+
+```
+feature/new-nav
+bug/footer-links
+feature/hero-section-animation
 ```
 
 ## License
