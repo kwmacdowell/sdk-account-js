@@ -16,7 +16,7 @@
 
 import firebase from 'firebase'
 
-class XYAccount {
+export default class XYAccount {
   constructor (_onStateChange) {
     console.log(`XYAccount constructor`)
     const config = {
@@ -74,5 +74,3 @@ class XYAccount {
     return firebase.auth().currentUser != null
   }
 }
-
-export default XYAccount

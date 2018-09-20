@@ -1,5 +1,5 @@
 import chai from 'chai'
-import XYAccount from '../index.js'
+import XYAccount from '../src/account.js'
 
 // Tell chai that we'll be using the "should" style assertions.
 chai.should()
