@@ -2,7 +2,7 @@
 
 ![logo]
 
-# XYAccount JavaScript Client [![CircleCI](https://circleci.com/gh/XYOracleNetwork/sdk-account-js.svg?style=svg&circle-token=37b7047073ba20592fad42d90447ff2b0c896a0b)](https://circleci.com/gh/XYOracleNetwork/sdk-account-js)
+# XYAccount JavaScript Client [![CircleCI](https://circleci.com/gh/XYOracleNetwork/sdk-account-js.svg?style=svg&circle-token=37b7047073ba20592fad42d90447ff2b0c896a0b)](https://circleci.com/gh/XYOracleNetwork/sdk-account-js) [![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=master&token=4d0c0cb937b80bf4ddcf8050ddaaed5770ed1946)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
 
 ## Usage
 ### Server ([NodeJS](https://nodejs.org/en/))
