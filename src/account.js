@@ -15,10 +15,10 @@
 /* eslint class-methods-use-this: 0 */
 
 import firebase from 'firebase'
+import 'firebase/firestore'
 
 export default class XYAccount {
   constructor (_onStateChange) {
-    console.log(`XYAccount constructor`)
     const config = {
       apiKey: `AIzaSyCCtXYmkLd3gh6fKjSCGOWhsYoeKccYq-g`,
       authDomain: `xyo-network-1522800011804.firebaseapp.com`,
@@ -31,6 +31,7 @@ export default class XYAccount {
     if (_onStateChange) {
       firebase.auth().onAuthStateChanged(_onStateChange)
     }
+    firebase.firestore().settings({ timestampsInSnapshots: true })
   }
 
   record (_event) {
@@ -72,5 +73,24 @@ export default class XYAccount {
 
   isSignedIn () {
     return firebase.auth().currentUser != null
+  }
+
+  updateUser (data) {
+    if (this.isSignedIn()) {
+      const userUid = this.currentUser().uid
+      return firebase.firestore().collection(`users`).doc(userUid).set(data, { merge: true })
+    }
+    throw new Error(`You must be signed in to update the user`)
+  }
+
+  addWallet (address) {
+    if (this.isSignedIn()) {
+      const userUid = this.currentUser().uid
+      return firebase.firestore().collection(`wallets`).doc(`${userUid}_${address}`).set({
+        userUid,
+        address
+      })
+    }
+    throw new Error(`You must be signed in to add a wallet.`)
   }
 }
