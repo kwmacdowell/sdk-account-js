@@ -93,4 +93,12 @@ export default class XYAccount {
     }
     throw new Error(`You must be signed in to add a wallet.`)
   }
+
+  removeWallet (address) {
+    if (this.isSignedIn()) {
+      const userUid = this.currentUser().uid
+      return firebase.firestore().collection(`wallets`).doc(`${userUid}_${address}`).delete()
+    }
+    throw new Error(`You must be signed in to remove a wallet.`)
+  }
 }
