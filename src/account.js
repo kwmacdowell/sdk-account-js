@@ -71,6 +71,16 @@ export default class XYAccount {
     await firebase.auth().signInWithPopup(provider)
   }
 
+  async getTokenFromWallet (message, signedMessage) {
+    const walletAuth = firebase.functions().httpsCallable(`walletAuth`)
+    const result = await walletAuth({ message, signedMessage })
+    return result.data
+  }
+
+  async signInWithCustomToken (token) {
+    return firebase.auth().signInWithCustomToken(token)
+  }
+
   isSignedIn () {
     return firebase.auth().currentUser != null
   }
