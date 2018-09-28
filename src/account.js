@@ -27,9 +27,17 @@ export default class XYAccount {
       storageBucket: `xyo-network-1522800011804.appspot.com`,
       messagingSenderId: `542704523793`
     }
-    this.app = firebase.initializeApp(config)
+
+    this.firebase = firebase
+
+    if (!this.firebase.apps.length) {
+      this.app = this.firebase.initializeApp(config)
+    } else {
+      this.app = this.firebase.apps[0]
+    }
+
     if (_onStateChange) {
-      firebase.auth().onAuthStateChanged(_onStateChange)
+      this.firebase.auth().onAuthStateChanged(_onStateChange)
     }
   }
 
@@ -37,40 +45,40 @@ export default class XYAccount {
   }
 
   currentUser () {
-    return firebase.auth().currentUser
+    return this.firebase.auth().currentUser
   }
 
   async sendPasswordResetEmail (email) {
-    await firebase.auth(this.app).sendPasswordResetEmail(email)
+    await this.firebase.auth(this.app).sendPasswordResetEmail(email)
   }
 
   async signUp (_email, _password) {
-    await firebase.auth().createUserWithEmailAndPassword(_email, _password)
+    await this.firebase.auth().createUserWithEmailAndPassword(_email, _password)
   }
 
   async signIn (_email, _password) {
-    await firebase.auth().signInWithEmailAndPassword(_email, _password)
+    await this.firebase.auth().signInWithEmailAndPassword(_email, _password)
   }
 
   async signOut () {
-    return firebase.auth().signOut()
+    await this.firebase.auth().signOut()
   }
 
   async updatePassword (_password) {
-    return this.currentUser().updatePassword(_password)
+    await this.currentUser().updatePassword(_password)
   }
 
   async signInWithFacebook () {
     const provider = new firebase.auth.FacebookAuthProvider()
-    await firebase.auth().signInWithPopup(provider)
+    await this.firebase.auth().signInWithPopup(provider)
   }
 
   async signInWithGoogle () {
     const provider = new firebase.auth.GoogleAuthProvider()
-    await firebase.auth().signInWithPopup(provider)
+    await this.firebase.auth().signInWithPopup(provider)
   }
 
   isSignedIn () {
-    return firebase.auth().currentUser != null
+    return this.firebase.auth().currentUser != null
   }
 }
