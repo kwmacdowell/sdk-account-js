@@ -9,12 +9,12 @@
 ### Master
 
 [![Build Status](https://travis-ci.com/XYOracleNetwork/sdk-account-js.svg?token=A85R2pDnngMDyWoqeLUG&branch=master)](https://travis-ci.com/XYOracleNetwork/sdk-account-js)
-[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=master&token=4d0c0cb937b80bf4ddcf8050ddaaed5770ed1946)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
+[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=master&token=da3517ea47ce1e5d4a215cde849d5a3db2147265)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
 
 ### Develop
 
 [![Build Status](https://travis-ci.com/XYOracleNetwork/sdk-account-js.svg?token=A85R2pDnngMDyWoqeLUG&branch=develop)](https://travis-ci.com/XYOracleNetwork/sdk-account-js)
-[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=develop&token=4d0c0cb937b80bf4ddcf8050ddaaed5770ed1946)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
+[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=develop&token=da3517ea47ce1e5d4a215cde849d5a3db2147265)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
 
 ## Usage
 
