@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["XYAccount"],"mappings":"aAAA,0D,yNAEeA,gB","sourcesContent":["import XYAccount from './account'\n\nexport default XYAccount\n"],"file":"index.js"}
