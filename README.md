@@ -10,12 +10,13 @@
 
 [![Build Status](https://travis-ci.com/XYOracleNetwork/sdk-account-js.svg?token=A85R2pDnngMDyWoqeLUG&branch=master)](https://travis-ci.com/XYOracleNetwork/sdk-account-js)
 [![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=master&token=da3517ea47ce1e5d4a215cde849d5a3db2147265)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
-[Greenkeeper badge](https://badges.greenkeeper.io/XYOracleNetwork/sdk-account-js.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/XYOracleNetwork/sdk-account-js.svg)](https://greenkeeper.io/)
 
 ### Develop
 
 [![Build Status](https://travis-ci.com/XYOracleNetwork/sdk-account-js.svg?token=A85R2pDnngMDyWoqeLUG&branch=develop)](https://travis-ci.com/XYOracleNetwork/sdk-account-js)
-[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=develop&token=da3517ea47ce1e5d4a215cde849d5a3db2147265)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js) [![Greenkeeper badge](https://badges.greenkeeper.io/XYOracleNetwork/sdk-account-js.svg)](https://greenkeeper.io/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-account-js?branch=develop&token=da3517ea47ce1e5d4a215cde849d5a3db2147265)](https://bettercodehub.com/results/XYOracleNetwork/sdk-account-js)
+[![Greenkeeper badge](https://badges.greenkeeper.io/XYOracleNetwork/sdk-account-js.svg)](https://greenkeeper.io/)
 
 ## Usage
 
