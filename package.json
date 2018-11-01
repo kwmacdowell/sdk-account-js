@@ -1,6 +1,6 @@
 {
-  "name": "sdk-account-js",
-  "version": "1.0.0",
+  "name": "@xyo-network/sdk-account-js",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,8 +8,15 @@
     "watch": "babel src --out-dir dist --source-maps --watch",
     "test": "./node_modules/.bin/mocha --require @babel/register"
   },
-  "author": "",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XYOracleNetwork/sdk-account-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XYOracleNetwork/sdk-account-js.git"
+  },
+  "author": "Arie Trouw",
+  "license": "MIT",
   "browserify": {
     "transform": [
       [
@@ -23,23 +30,24 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@firebase/app-types": "^0.3.2",
     "babel-eslint": "^10.0.1",
     "babel-preset-minify": "^0.5.0",
-    "chai": "^4.1.2",
-    "eslint": "^5.6.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
     "eslint-fixer": "^0.1.4",
-    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-html": "^4.0.6",
     "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^4.0.0",
@@ -47,7 +55,6 @@
     "regenerator-runtime": "^0.12.1"
   },
   "dependencies": {
-    "@firebase/app-types": "^0.3.2",
-    "firebase": "^5.5.0"
+    "firebase": "^5.5.6"
   }
 }
