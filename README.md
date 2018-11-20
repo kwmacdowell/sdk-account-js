@@ -34,7 +34,7 @@ import XYAccount from './sdk-account-js'
 
 ### Website ([Browserify](http://browserify.org/))
 
-If you are using the library as an include that will be process during your website build, just add the library.  The configuration for how Browserify should build it is included in the package.json file
+If you are using the library as an include that will be processed during your website build, just add the library.  The configuration for how Browserify should build it is included in the package.json file
 
 ```javascript
 const XYAccount = require('./sdk-account-js')
@@ -62,7 +62,7 @@ If you are using the library on an existing website and just want to include it,
 We use the "Github Flow" methodology.
 Please review [Github Flow](https://guides.github.com/introduction/flow/)
 
-When you wish to make changes or add new fetures, please do the following things:
+When you wish to make changes or add new fetures, please do the following:
 
 1. Create a new Branch from the Master branch and follow these naming conventions [Naming Conventions](https://github.com/chrisjlee/git-style-guide#short-well-defined-tokens)
 
